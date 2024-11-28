@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <header>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a></li>
+                <li><a href="#">CHAMPION</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">ESPORTS</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">LEAGUE OF LEGENDS</a></li>
+                <li class="hideOnMobile"><a href="#">GAME</a></li>
+                <li class="hideOnMobile"><a href="#">CHAMPION</a></li>
+                <li class="hideOnMobile"><a href="#">NEWS</a></li>
+                <li class="hideOnMobile"><a href="#">ESPORTS</a></li>
+                <li class="hideOnMobile"><a href="#">Log In</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </a></li>
+            </ul>      
+        </nav>
+    </header>
+    <div class="image-container">
+        <img src="Godkingdarius.png" alt="League of Legends" width="290" height="290">
+        <h5>The Hand of Noxus</h5>
+        <p>Darius is a fearsome, 
+            imposing fighter known for his overwhelming strength and brutal fighting style.
+         He hails from the ruthless empire of Noxus, where he serves as a high-ranking officer in the Noxian military. 
+        
+        </p>
+        <img src="Godkinggaren.png" alt="League of Legends" width="280" height="280">
+        <h5>The Might of Demacia</h5>
+            <p> Garen is a noble and steadfast warrior from the kingdom of Demacia, a land that values honor, justice, and the defense of the weak.
+            Garen is a champion of justice and the ideal of the perfect soldier, known for his unbreakable will and sense of duty.
+        </p>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+
+<footer>SEAN MICHAEL S MAGPUSAO BSIT-1C</footer>
+</body>
+</html>
